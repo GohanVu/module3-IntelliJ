@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/ss2/demoFinalModule2/Queries.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/ss2/demoFinalModule2/create_table.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/ss2/demoFinalModule2/insert_value.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/ss2/exercise/SalesManagementDatabase.sql" dialect="MySQL" />
+    <file url="PROJECT" dialect="MySQL" />
+  </component>
+</project>
