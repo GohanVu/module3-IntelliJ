@@ -27,3 +27,5 @@ create table orderDetails (
     foreign key (oID) references orders(oID),
     foreign key (pID) references products(pID)
 );
+alter table orders
+modify column oTotalPrice decimal(10,2);
