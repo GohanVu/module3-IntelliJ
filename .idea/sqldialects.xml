@@ -10,6 +10,8 @@
     <file url="file://$PROJECT_DIR$/src/ss3/exercise/QueriesStudentManagement.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/ss3/practice/AddDataStudentManagement.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/ss3/practice/QueriesWithStudentManagement.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/ss4/excercise/PracticeCommonFuntionSQL.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/ss4/practice/UsingCommonFunctionsSQL.sql" dialect="MySQL" />
     <file url="PROJECT" dialect="MySQL" />
   </component>
 </project>
