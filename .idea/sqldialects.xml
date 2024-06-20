@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/furmara_resort/Queries.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/furmara_resort/create_table.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/furmara_resort/insert_data.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/ss1/CreateStudentManagement.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/ss2/demoFinalModule2/Queries.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/ss2/demoFinalModule2/create_table.sql" dialect="MySQL" />
@@ -12,6 +15,12 @@
     <file url="file://$PROJECT_DIR$/src/ss3/practice/QueriesWithStudentManagement.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/ss4/excercise/PracticeCommonFuntionSQL.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/ss4/practice/UsingCommonFunctionsSQL.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/ss5/practice/IndexInSQL/Queries.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/ss5/practice/PassingParametersStoreProcedure/Queries.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/ss5/practice/StoreProcedure/Queries.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/ss5/practice/TriggerInSQL/Queries.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/ss5/practice/ViewInMySQL/Queries.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/ss5/practice/mysqlsampledatabase.sql" dialect="MySQL" />
     <file url="PROJECT" dialect="MySQL" />
   </component>
 </project>
