@@ -15,6 +15,8 @@
     <file url="file://$PROJECT_DIR$/src/ss3/practice/QueriesWithStudentManagement.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/ss4/excercise/PracticeCommonFuntionSQL.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/ss4/practice/UsingCommonFunctionsSQL.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/ss5/excercise/Queries.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/ss5/excercise/View,Index,StoredProcedure.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/ss5/practice/IndexInSQL/Queries.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/ss5/practice/PassingParametersStoreProcedure/Queries.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/ss5/practice/StoreProcedure/Queries.sql" dialect="MySQL" />
