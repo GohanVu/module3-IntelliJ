@@ -22,16 +22,20 @@ order by so_lan_dat_phong;
 
 #5.	Hiển thị ma_khach_hang, ho_ten, ten_loai_khach, ma_hop_dong, ten_dich_vu, ngay_lam_hop_dong, ngay_ket_thuc, tong_tien
 #(những khách hàng nào chưa từng đặt phòng cũng phải hiển thị ra).
-select kh.ma_khach_hang, kh.ho_ten, lk.ten_loai_khach, hd.ma_hop_dong, dv.ten_dich_vu,hd.ngay_lam_hop_dong,hd.ngay_ket_thuc,
-       coalesce(dv.chi_phi_thue +(select sum(hdct.so_luong * dvdk.gia)
-                                  from hop_dong_chi_tiet hdct
-                                  join dich_vu_di_kem dvdk
-                                  on hdct.ma_dich_vu_di_kem = dvdk.ma_dich_vu_di_kem)) as tong_tien
-from khach_hang kh
-left join loai_khach lk on kh.ma_loai_khach = lk.ma_loai_khach
-left join  hop_dong hd on kh.ma_khach_hang = hd.ma_khach_hang
-left join dich_vu dv on hd.ma_dich_vu = dv.ma_dich_vu
-order by kh.ma_khach_hang;
+
+SELECT kh.ma_khach_hang, kh.ho_ten, lk.ten_loai_khach, hd.ma_hop_dong, dv.ten_dich_vu, hd.ngay_lam_hop_dong, hd.ngay_ket_thuc,
+       COALESCE(dv.chi_phi_thue + (SELECT SUM(hdct.so_luong * dvdk.gia)
+                                   FROM hop_dong_chi_tiet hdct
+                                    JOIN dich_vu_di_kem dvdk ON hdct.ma_dich_vu_di_kem = dvdk.ma_dich_vu_di_kem
+                                   WHERE hdct.ma_hop_dong = hd.ma_hop_dong), dv.chi_phi_thue
+                                    ) AS tong_tien
+FROM khach_hang kh
+         LEFT JOIN loai_khach lk ON kh.ma_loai_khach = lk.ma_loai_khach
+         LEFT JOIN hop_dong hd ON kh.ma_khach_hang = hd.ma_khach_hang
+         LEFT JOIN dich_vu dv ON hd.ma_dich_vu = dv.ma_dich_vu
+group by kh.ma_khach_hang, kh.ho_ten, lk.ten_loai_khach, hd.ma_hop_dong, dv.ten_dich_vu, hd.ngay_lam_hop_dong, hd.ngay_ket_thuc
+order by ma_khach_hang;
+
 
 #6Hiển thị ma_dich_vu, ten_dich_vu, dien_tich, chi_phi_thue, ten_loai_dich_vu của tất cả các loại dịch vụ chưa từng
 # được khách hàng thực hiện đặt từ quý 1 của năm 2021 (Quý 1 là tháng 1, 2, 3).
@@ -41,8 +45,8 @@ join loai_dich_vu ldv on dv.ma_loai_dich_vu = ldv.ma_loai_dich_vu
 where ma_dich_vu not in(
     select ma_dich_vu
     from hop_dong
-    where ngay_lam_hop_dong between '2021-01-01' and '2021-03-31'
-    );
+    where ngay_lam_hop_dong between '2021-01-01' and '2021-03-31')
+order by dv.ma_dich_vu;
 
 #7.	Hiển thị thông tin ma_dich_vu, ten_dich_vu, dien_tich, so_nguoi_toi_da, chi_phi_thue, ten_loai_dich_vu của tất cả các
 # loại dịch vụ đã từng được khách hàng đặt phòng trong năm 2020 nhưng chưa từng được khách hàng đặt phòng trong năm 2021.
@@ -53,4 +57,19 @@ where dv.ma_dich_vu in (select ma_dich_vu
                         from hop_dong
                         where year(ngay_lam_hop_dong) =2020 and year(ngay_lam_hop_dong) !=2021);
 
+#8.	Hiển thị thông tin ho_ten khách hàng có trong hệ thống, với yêu cầu ho_ten không trùng nhau.
+select ho_ten
+from khach_hang
+group by  ho_ten;
+
+select distinct ho_ten
+from khach_hang;
+
+select ho_ten
+from (
+    select ho_ten ,
+           row_number() over (partition by ho_ten order by ho_ten) as rnk
+    from khach_hang
+     ) as temp
+where rnk=1;
 

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/src/furmara_resort/Queries.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/furmara_resort/Queries1-8.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/furmara_resort/Queries9-20.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/furmara_resort/create_table.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/furmara_resort/insert_data.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/ss1/CreateStudentManagement.sql" dialect="MySQL" />
