@@ -1,0 +1,22 @@
+.container {
+    display: flex; /* Sử dụng Flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 50px; /* Khoảng cách giữa ảnh và chữ */
+}
+
+.container img {
+    width: 300px;
+}
+body{
+    font-family: "Comic Sans MS";
+}
+h1{
+    position: relative;
+    color: #ff0059;
+    font-family: "Lucida Calligraphy";
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 0 0 0.2em #0c1921, 0.6em 0.6em 1.6em #0c1921;
+    text-decoration: none;
+}
+
