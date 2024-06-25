@@ -1,0 +1,45 @@
+html body {
+    height: 100vh;
+}
+body {
+    width: 60%;
+    margin: auto;
+    line-height: 30px;
+}
+#header ul li {
+    display: inline;
+    margin: 30px 30px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0.1em 0.1em 6em lightpink;
+}
+#header ul li:hover{
+    box-shadow:0 0 0.8em lightcoral ;
+}
+#header {
+    background-color: #333;
+}
+ul li a {
+    text-decoration: none;
+    color: #bebebe;
+    list-style-type: none;
+}
+#left {
+    float: left;
+    background-color: #333;
+    width: 20%;
+    margin: 0;
+    height: 400px;
+}
+#left ul li {
+    list-style-type: none;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+#left ul li:hover {
+    text-decoration: underline;
+}
+#content{
+    float: left;
+
+}
