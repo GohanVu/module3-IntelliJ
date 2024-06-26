@@ -1,6 +1,4 @@
-html body {
-    height: 100vh;
-}
+
 body {
     width: 60%;
     margin: auto;
@@ -8,7 +6,7 @@ body {
 }
 #header ul li {
     display: inline;
-    margin: 30px 30px 30px;
+    margin: 20px 20px 20px;
     font-size: 20px;
     font-weight: 600;
     text-shadow: 0.1em 0.1em 6em lightpink;
@@ -41,5 +39,104 @@ ul li a {
 }
 #content{
     float: left;
+    background-color: #f0d9ff;
+    width: 60%;
+    margin: 0;
+    height: 400px;
+    text-align: center;
+    color: palevioletred;
+}
+#right {
+    float: right;
+    background-color: #ffe3e1;
+    width: 20%;
+    margin-bottom: 20px;
+    height: 400px;
+}
+#right .ads{
+    width: 100px;
+    height: 35px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    border: 1px solid #d789a1;
+    text-align: center;
+    border-radius: 10%;
+    color: #d780a1;
+}
+.ads:hover {
+    background-color: #ffb6b9;
+    font-weight: bold;
+}
+#footer {
+    clear: both;
+    height: 50px;
+    background-color: #f4bfbf;
+    text-align: center;
+    padding-top: 10px;
+    color: peru;
+    margin-top: 0;
+}
+#s-body {
+    height: 100%;
+}
+#login {
+    float: right;
 
+}
+/*#content #left #right #footer {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+@media only screen and (max-width: 1100px) {
+    #login {
+        float: none;
+        left: 10px;
+    }
+    #header ul li {
+        font-size: small;
+        margin-left: 30px;
+    }
+    #right .ads {
+        width: 70px;
+        height: 25px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        border: 1px solid #d780a1;
+        text-align: center;
+        border-radius: 10%;
+        color: #d780a1;
+    }
+    #footer, #left, #right, #header {
+        background-color: black;
+        border: 1px solid #f745c1;
+        margin: 0;
+    }
+    #content {
+        width: 58.9%;
+        background-color: #f756c1;
+        color: black;
+        border: #f756c1;
+        height: 400px;
+        border: 1px solid #f756c1;
+    }
+    ul li a {
+        color: #f756c1;
+    }
+    #footer {
+        color: #f756c1;
+    }
+    #header ul li {
+        text-shadow: 0.1em 0.1em 1.6em #f756c1;
+    }
+    div .ads:hover {
+        font-weight: bold;
+        animation-name: example;
+        animation-duration: 4s;
+    }
+    @keyframes example {
+        from {background-color: black;}
+        to {background-color: #ffa6dc;}
+    }
 }
