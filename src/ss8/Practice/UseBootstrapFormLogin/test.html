@@ -1,0 +1,155 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Template Bootstrap</title>
+  <!-- File Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- CSS tùy chỉnh của bạn ở dưới này -->
+  <style>
+    .container {
+      border: solid red;
+    }
+    .container-fluid {
+      border: solid black;
+    }
+  </style>
+
+</head>
+
+<body>
+<h1>Xin chào Bootstrap!</h1>
+<div class="container-fluid">
+  <!-- Hàng với 2 cột bằng nhau -->
+  <div class="row">
+    <div class="col-md-6">Cột trái</div>
+    <div class="col-md-6">Cột phải</div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-md-3">Cột 1</div>
+    <div class="col-sm-8 col-md-6">Cột 2</div>
+    <div class="col-sm-12 col-md-3">Cột 3</div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-xl-3"><p>Hộp 1</p></div>
+    <div class="col-lg-4 col-md-6 col-xl-3"><p>Hộp 2</p></div>
+    <div class="col-lg-4 col-md-6 col-xl-3"><p>Hộp 3</p></div>
+    <div class="col-lg-4 col-md-6 col-xl-3"><p>Hộp 4</p></div>
+    <div class="col-lg-4 col-md-6 col-xl-3"><p>Hộp 5</p></div>
+    <div class="col-lg-4 col-md-6 col-xl-3"><p>Hộp 6</p></div>
+    <div class="col-lg-4 col-md-6 col-xl-3"><p>Hộp 7</p></div>
+    <div class="col-lg-4 col-md-6 col-xl-3"><p>Hộp 8</p></div>
+    <div class="col-lg-4 col-md-6 col-xl-3"><p>Hộp 9</p></div>
+    <div class="col-lg-4 col-md-6 col-xl-3"><p>Hộp 10</p></div>
+    <div class="col-lg-4 col-md-6 col-xl-3"><p>Hộp 11</p></div>
+    <div class="col-lg-4 col-md-6 col-xl-3"><p>Hộp 12</p></div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">Cột trái</div>
+    <div class="col-sm-4">Cột phải
+      <!-- Cột phải với các hàng và cột lồng nhau -->
+      <div class="row">
+        <div class="col-12">Hộp 12</div>
+      </div>
+      <div class="row">
+        <div class="col-6">Hộp 10</div>
+        <div class="col-6">Hộp 11</div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-md-3">Cột trái</div>
+    <div class="col-md-auto">Cột có chiều rộng biến đổi</div>
+    <div class="col-md-3">Cột phải</div>
+  </div>
+  <div class="row">
+    <div class="col">Cột trái</div>
+    <div class="col-auto">Cột có chiều rộng biến đổi</div>
+    <div class="col">Cột phải</div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col">Cột 1</div>
+    <div class="col">Cột 2</div>
+    <div class="col">Cột 3</div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col">Cột 1</div>
+    <div class="col">Cột 2</div>
+    <div class="col">Cột 3</div>
+  </div>
+  <div class="row align-items-end">
+    <div class="col">Cột 1</div>
+    <div class="col">Cột 2</div>
+    <div class="col">Cột 3</div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col align-self-start">Cột 1</div>
+    <div class="col align-self-center">Cột 2</div>
+    <div class="col align-self-end">Cột 3</div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="row justify-content-start">
+    <div class="col-4">Cột 1</div>
+    <div class="col-4">Cột 2</div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-4">Cột 1</div>
+    <div class="col-4">Cột 2</div>
+  </div>
+  <div class="row justify-content-end">
+    <div class="col-4">Cột 1</div>
+    <div class="col-4">Cột 2</div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="row justify-content-around">
+    <div class="col-4">Cột 1</div>
+    <div class="col-4">Cột 2</div>
+
+  </div>
+  <div class="row justify-content-between">
+    <div class="col-2">Cột 1</div>
+    <div class="col-2">Cột 2</div>
+    <div class="col-2">Cột 3</div>
+    <div class="col-2">Cột 4</div>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-4">
+      col-md-8 offset-md-4
+    </div>
+  </div>
+</div>
+<hr>
+<div class="row no-gutters">
+  <div class="col-4">Cột 1</div>
+  <div class="col-4">Cột 2</div>
+  <div class="col-4">Cột 3</div>
+</div>
+</hr>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+
